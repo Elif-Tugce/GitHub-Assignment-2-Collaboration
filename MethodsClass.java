@@ -1,6 +1,8 @@
 import java.util.Random;
 
 public class MethodsClass {
+
+    //Madde A
     public static int[] createArray(int size) {
         int[] arr = new int[size];
         Random rand = new Random();
@@ -44,15 +46,19 @@ public class MethodsClass {
 
     //Madde E
     public int oddsIndexsSum(int arr[]){
-
-
-        return 1;
+        int oddSum = 0;
+        for (int i = 1; i < arr.length; i = i + 2) {
+            oddSum = oddSum + arr[i];
+        }
+        return oddSum;
     }
 
     public int evensIndexsSum(int arr[]){
-
-
-        return 1;
+        int evenSum = 0;
+        for (int i = 0; i < arr.length; i = i + 2) {
+            evenSum = evenSum + arr[i];
+        }
+        return evenSum;
     }
 
 
