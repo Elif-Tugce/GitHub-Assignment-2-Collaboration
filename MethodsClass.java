@@ -11,20 +11,28 @@ public class MethodsClass {
     }
     //Madde C
     public int minArray(int arr[]){
+        int minValue = arr[0];
 
+        for (int i=1; i < arr.length; i++){
+            if(arr[i] < minValue){
+                minValue = arr[i];
+            }
+        }
 
-
-
-        return 1;
+        return minValue;
     }
 
 
     public int maxArray(int arr[]){
+        int maxValue = arr[0];
 
+        for (int i=1; i < arr.length; i++){
+            if(arr[i] < maxValue){
+                maxValue = arr[i];
+            }
+        }
 
-
-
-        return 1;
+        return maxValue;
     }
 
 
