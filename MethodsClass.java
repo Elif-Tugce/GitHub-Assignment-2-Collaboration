@@ -38,8 +38,12 @@ public class MethodsClass {
 
     public int[] differenceOfArray(int arr[], int average){
 
+        int [] differ = new int [arr.length];
 
-        return /*array döncek*/;  
+        for (int i = 0; i < arr.length; i++){
+            differ [i] = arr[i] - average;
+        }
+        return differ;  
     }
 
     //Madde E
