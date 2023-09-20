@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class MethodsClass {
 
-    //Madde A
+    //Option A
     public static int[] createArray(int size) {
         int[] arr = new int[size];
         Random rand = new Random();
@@ -11,8 +11,8 @@ public class MethodsClass {
         }
         return arr;
     }
-    //Madde C
-    public int minArray(int arr[]){
+    //Option C
+    public static int minArray(int arr[]){
         int minValue = arr[0];
 
         for (int i=1; i < arr.length; i++){
@@ -25,11 +25,11 @@ public class MethodsClass {
     }
 
 
-    public int maxArray(int arr[]){
+    public static int maxArray(int arr[]){
         int maxValue = arr[0];
 
         for (int i=1; i < arr.length; i++){
-            if(arr[i] < maxValue){
+            if(arr[i] > maxValue){
                 maxValue = arr[i];
             }
         }
@@ -38,9 +38,9 @@ public class MethodsClass {
     }
 
 
-    //Madde D
+    //Option D
 
-    public int averageOfArray(int arr[]){
+    public static int averageOfArray(int arr[]){
         int sum = 0;
         int average;
 
@@ -53,7 +53,7 @@ public class MethodsClass {
         return average;
     }
 
-    public int[] differenceOfArray(int arr[], int average){
+    public static int[] differenceOfArray(int arr[], int average){
 
         int [] differ = new int [arr.length];
 
@@ -63,8 +63,8 @@ public class MethodsClass {
         return differ;  
     }
 
-    //Madde E
-    public int oddsIndexsSum(int arr[]){
+    //Option E
+    public static int oddsIndexsSum(int arr[]){
         int oddSum = 0;
         for (int i = 1; i < arr.length; i = i + 2) {
             oddSum = oddSum + arr[i];
@@ -72,7 +72,7 @@ public class MethodsClass {
         return oddSum;
     }
 
-    public int evensIndexsSum(int arr[]){
+    public static int evensIndexsSum(int arr[]){
         int evenSum = 0;
         for (int i = 0; i < arr.length; i = i + 2) {
             evenSum = evenSum + arr[i];
