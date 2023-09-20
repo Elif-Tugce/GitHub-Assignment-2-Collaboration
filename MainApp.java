@@ -34,9 +34,10 @@ public class MainApp{
                 average = MethodsClass.averageOfArray(arr);
                 System.out.printf("The average of the elements in the given array is: %d\n",average);
             }
-            else if(userChoice == 3){
-
-            }
+        else if(userChoice == 3){
+            System.out.println("The sum of the odd indexed numbers are: " + MethodsClass.oddsIndexsSum(arr));
+            System.out.println("The sum of the even indexed numbers are: " + MethodsClass.evensIndexsSum(arr));
+        }
             else if(userChoice == 4){
                 System.out.println("EXIT. Have a nice day!");
             }
