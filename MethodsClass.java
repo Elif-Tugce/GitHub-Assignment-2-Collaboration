@@ -31,9 +31,16 @@ public class MethodsClass {
     //Madde D
 
     public int averageOfArray(int arr[]){
+        int sum = 0;
+        int average;
 
+        for (int i = 0; i < arr.length; i++){
+            sum = sum + arr[i];
+        }
 
-        return 1;
+        average = sum / arr.length;
+
+        return average;
     }
 
     public int[] differenceOfArray(int arr[], int average){
